@@ -1,1 +1,2 @@
-# spizdometr
+# Open Source Cycling Computer Project
+
