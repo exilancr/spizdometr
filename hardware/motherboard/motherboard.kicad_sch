@@ -237,6 +237,12 @@
 			)
 		)
 	)
+	(junction
+		(at 163.83 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbe733fa-3a6c-4921-9497-790696890c25")
+	)
 	(bus_entry
 		(at 130.81 177.8)
 		(size 2.54 -2.54)
@@ -258,13 +264,13 @@
 	)
 	(bus
 		(pts
-			(xy 128.27 175.26) (xy 133.35 175.26)
+			(xy 115.57 208.28) (xy 163.83 208.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ea8e04f-ca87-4c48-97c2-96a1de89de37")
+		(uuid "585be5a9-ea61-418b-b898-4267cf3ab844")
 	)
 	(bus
 		(pts
@@ -306,18 +312,7 @@
 		)
 		(uuid "d4af75c5-4a74-4c81-b40c-9fc5aa834a65")
 	)
-	(label "PWR{}"
-		(at 182.88 208.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7ff82df3-fd27-4c72-910e-d9f7e71c95a9")
-	)
-	(label "PWR.VDD3V3"
+	(label "PWR.VDD_{3V3}"
 		(at 130.81 190.5 90)
 		(fields_autoplaced yes)
 		(effects
@@ -463,6 +458,54 @@
 		)
 	)
 	(sheet
+		(at 86.36 200.66)
+		(size 29.21 22.86)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "90638a07-df27-4fb5-b830-3ffae070846a")
+		(property "Sheetname" "Power"
+			(at 86.36 199.9484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 86.36 224.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWR{PWR_ALIAS}" output
+			(at 115.57 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5e898b98-dedb-4012-99e5-12a0ad258226")
+		)
+		(instances
+			(project "motherboard"
+				(path "/5ade21d8-1dcf-4e66-8082-2cad393a5fdd"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 193.04 200.025)
 		(size 59.055 35.56)
 		(fields_autoplaced yes)
@@ -492,7 +535,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PWR{}" input
+		(pin "PWR{PWR_ALIAS}" input
 			(at 193.04 208.28 180)
 			(effects
 				(font
@@ -500,10 +543,10 @@
 				)
 				(justify left)
 			)
-			(uuid "591f6d77-1fb1-477b-b127-1ff9781c5418")
+			(uuid "066d7288-2f5d-4015-b1ba-9653ff4e9db9")
 		)
 		(instances
-			(project "sipzdometr"
+			(project "motherboard"
 				(path "/5ade21d8-1dcf-4e66-8082-2cad393a5fdd"
 					(page "2")
 				)

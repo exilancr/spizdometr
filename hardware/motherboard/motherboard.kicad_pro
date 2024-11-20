@@ -283,9 +283,7 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/PWR{}": "PWR"
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -409,6 +407,10 @@
     [
       "9099662e-218d-4c34-86d2-462efcce5cf7",
       "CPU"
+    ],
+    [
+      "90638a07-df27-4fb5-b830-3ffae070846a",
+      "Power"
     ]
   ],
   "text_variables": {}
